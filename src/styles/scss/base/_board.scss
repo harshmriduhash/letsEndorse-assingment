@@ -1,0 +1,109 @@
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.square {
+  float: left;
+  font-size: 5px;
+  font-weight: bold;
+  padding: 0;
+  position: relative;
+  line-height: $square_size_small;
+  height: $square_size_small;
+  width: $square_size_small;
+
+  .square-label {
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 9px;
+    z-index: 1;
+  }
+
+  &.dark {
+    background-color: black;
+    &.blue {
+      background-color: #6cdae7;
+    }
+    &.brown {
+      background-color: #582900;
+    }
+    &.green {
+      background-color: yellowgreen;
+    }
+    &.gray {
+      background-color: darkslategray;
+    }
+    &.orange {
+      background-color: darkorange;
+    }
+    &.violet {
+      background-color: darkmagenta;
+    }
+    &.red {
+      background-color: crimson;
+    }
+    &.last-move {
+      background-color: lightskyblue;
+    }
+
+    .square-label {
+      color: white;
+    }
+  }
+
+  &.light {
+    background-color: #ffffee;
+    &.last-move {
+      background-color: lightskyblue;
+    }
+  }
+
+
+
+  &:focus {
+    outline: none;
+  }
+
+  .dot {
+    height: 22%;
+    width: 22%;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+    margin: 39%;
+    z-index: 1;
+    position: absolute;
+    background-color: orange;
+  }
+}
+
+.square-selected {
+  background-color: deepskyblue;
+}  
+
+@include for-tablet-portrait-up { 
+  .board-row {
+    .square {
+      line-height: $square_size_medium;
+      height: $square_size_medium;
+      width: $square_size_medium;
+      font-size: 7px;
+    }
+  } 
+}
+
+@include for-desktop-up {
+  .board-row {
+    .square {
+      line-height: $square_size_large;
+      height: $square_size_large;
+      width: $square_size_large;
+      font-size: 9px;
+    }
+  } 
+}

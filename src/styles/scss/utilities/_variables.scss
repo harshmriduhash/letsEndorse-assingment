@@ -1,0 +1,39 @@
+@function calc-column($value1, $value2) {
+  @return $value1 + $value2;
+}
+
+// Small board
+$square_size_small: 40px;
+$piece_padding_small: 2px;  
+$piece_size_small: $square_size_small - $piece_padding_small - $piece_padding_small;
+$column2_small: $square_size_small;
+$column3_small: calc-column($square_size_small, $square_size_small);
+$column4_small: calc-column($column3_small, $square_size_small);
+$column5_small: calc-column($column4_small, $square_size_small);
+$column6_small: calc-column($column5_small, $square_size_small);
+$column7_small: calc-column($column6_small, $square_size_small);
+$column8_small: calc-column($column7_small, $square_size_small);
+
+// Medium board
+$square_size_medium: 66px;
+$piece_padding_medium: 5px;  
+$piece_size_medium: $square_size_medium - $piece_padding_medium - $piece_padding_medium;
+$column2_medium: $square_size_medium;
+$column3_medium: calc-column($square_size_medium, $square_size_medium);
+$column4_medium: calc-column($column3_medium, $square_size_medium);
+$column5_medium: calc-column($column4_medium, $square_size_medium);
+$column6_medium: calc-column($column5_medium, $square_size_medium);
+$column7_medium: calc-column($column6_medium, $square_size_medium);
+$column8_medium: calc-column($column7_medium, $square_size_medium);
+
+// Large board
+$square_size_large: 100px;
+$piece_padding_large: 7px;  
+$piece_size_large: $square_size_large - $piece_padding_large - $piece_padding_large;
+$column2_large: $square_size_large;
+$column3_large: calc-column($square_size_large, $square_size_large);
+$column4_large: calc-column($column3_large, $square_size_large);
+$column5_large: calc-column($column4_large, $square_size_large);
+$column6_large: calc-column($column5_large, $square_size_large);
+$column7_large: calc-column($column6_large, $square_size_large);
+$column8_large: calc-column($column7_large, $square_size_large);

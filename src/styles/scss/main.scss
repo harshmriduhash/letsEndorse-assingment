@@ -1,0 +1,11 @@
+@import "./fontawesome/fontawesome.scss";
+@import "./fontawesome/solid.scss";
+@import "./fontawesome/regular.scss";
+
+@import "utilities/mixins";
+@import "utilities/variables";
+
+@import "base/game";
+@import "base/pieces";
+@import "base/board";
+@import "base/pawn-promotion";

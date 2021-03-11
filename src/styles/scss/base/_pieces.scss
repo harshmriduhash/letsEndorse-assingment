@@ -1,0 +1,330 @@
+.pieces {
+  position: absolute;
+  margin-top: 20px;
+  top: 0;
+}
+
+.piece {
+  width: $square_size_small;
+  height: $square_size_small;
+  position: absolute;
+
+  img {
+    padding: $piece_padding_small;
+    width: $piece_size_small;
+    height: $piece_size_small;
+  }
+}
+
+@include for-tablet-portrait-up {    
+  .piece {
+    width: $square_size_medium;
+    height: $square_size_medium;
+  
+    img {
+      padding: $piece_padding_medium;
+      width: $piece_size_medium;
+      height: $piece_size_medium;
+    }
+  }
+}
+
+@include for-desktop-up { 
+  .piece {
+    width: $square_size_large;
+    height: $square_size_large;
+  
+    img {
+      padding: $piece_padding_large;
+      width: $piece_size_large;
+      height: $piece_size_large;
+    }
+  }
+}
+
+.game-board {
+
+  /** Pieces position on regular display mode **/
+  &.regular {
+    .columnB {
+      left: $column2_small;
+    }
+    .columnC {
+      left: $column3_small;
+    }
+    .columnD {
+      left: $column4_small;
+    }
+    .columnE {
+      left: $column5_small;
+    }
+    .columnF {
+      left: $column6_small;
+    }
+    .columnG {
+      left: $column7_small;
+    }
+    .columnH {
+      left: $column8_small;
+    }
+    .row1 {
+      top: $column8_small;
+    }
+    .row2 {
+      top: $column7_small;
+    }
+    .row3 {
+      top: $column6_small;
+    }
+    .row4 {
+      top: $column5_small;
+    }
+    .row5 {
+      top: $column4_small;
+    }
+    .row6 {
+      top: $column3_small;
+    }
+    .row7 {
+      top: $column2_small;
+    }
+  }
+
+  /** Pieces position on reverse display mode **/
+  &.reverse {
+    .columnA {
+      left: $column8_small;
+    }
+    .columnB {
+      left: $column7_small;
+    }
+    .columnC {
+      left: $column6_small;
+    }
+    .columnD {
+      left: $column5_small;
+    }
+    .columnE {
+      left: $column4_small;
+    }
+    .columnF {
+      left: $column3_small;
+    }
+    .columnG {
+      left: $column2_small;
+    }
+    .row8 {
+      top: $column8_small;
+    }
+    .row7 {
+      top: $column7_small;
+    }
+    .row6 {
+      top: $column6_small;
+    }
+    .row5 {
+      top: $column5_small;
+    }
+    .row4 {
+      top: $column4_small;
+    }
+    .row3 {
+      top: $column3_small;
+    }
+    .row2 {
+      top: $column2_small;
+    }
+  }
+}
+
+@include for-tablet-portrait-up {    
+  .game .game-board {
+    /** Pieces position on regular display mode **/
+    &.regular {
+      .columnB {
+        left: $column2_medium;
+      }
+      .columnC {
+        left: $column3_medium;
+      }
+      .columnD {
+        left: $column4_medium;
+      }
+      .columnE {
+        left: $column5_medium;
+      }
+      .columnF {
+        left: $column6_medium;
+      }
+      .columnG {
+        left: $column7_medium;
+      }
+      .columnH {
+        left: $column8_medium;
+      }
+      .row1 {
+        top: $column8_medium;
+      }
+      .row2 {
+        top: $column7_medium;
+      }
+      .row3 {
+        top: $column6_medium;
+      }
+      .row4 {
+        top: $column5_medium;
+      }
+      .row5 {
+        top: $column4_medium;
+      }
+      .row6 {
+        top: $column3_medium;
+      }
+      .row7 {
+        top: $column2_medium;
+      }
+    }
+
+    /** Pieces position on reverse display mode **/
+    &.reverse {
+      .columnA {
+        left: $column8_medium;
+      }
+      .columnB {
+        left: $column7_medium;
+      }
+      .columnC {
+        left: $column6_medium;
+      }
+      .columnD {
+        left: $column5_medium;
+      }
+      .columnE {
+        left: $column4_medium;
+      }
+      .columnF {
+        left: $column3_medium;
+      }
+      .columnG {
+        left: $column2_medium;
+      }
+      .row8 {
+        top: $column8_medium;
+      }
+      .row7 {
+        top: $column7_medium;
+      }
+      .row6 {
+        top: $column6_medium;
+      }
+      .row5 {
+        top: $column5_medium;
+      }
+      .row4 {
+        top: $column4_medium;
+      }
+      .row3 {
+        top: $column3_medium;
+      }
+      .row2 {
+        top: $column2_medium;
+      }
+    }
+  }
+}
+
+@include for-desktop-up {    
+  .game .game-board {
+    /** Pieces position on regular display mode **/
+    &.regular {
+      .columnB {
+        left: $column2_large;
+      }
+      .columnC {
+        left: $column3_large;
+      }
+      .columnD {
+        left: $column4_large;
+      }
+      .columnE {
+        left: $column5_large;
+      }
+      .columnF {
+        left: $column6_large;
+      }
+      .columnG {
+        left: $column7_large;
+      }
+      .columnH {
+        left: $column8_large;
+      }
+      .row1 {
+        top: $column8_large;
+      }
+      .row2 {
+        top: $column7_large;
+      }
+      .row3 {
+        top: $column6_large;
+      }
+      .row4 {
+        top: $column5_large;
+      }
+      .row5 {
+        top: $column4_large;
+      }
+      .row6 {
+        top: $column3_large;
+      }
+      .row7 {
+        top: $column2_large;
+      }
+    }
+
+    /** Pieces position on reverse display mode **/
+    &.reverse {
+      .columnA {
+        left: $column8_large;
+      }
+      .columnB {
+        left: $column7_large;
+      }
+      .columnC {
+        left: $column6_large;
+      }
+      .columnD {
+        left: $column5_large;
+      }
+      .columnE {
+        left: $column4_large;
+      }
+      .columnF {
+        left: $column3_large;
+      }
+      .columnG {
+        left: $column2_large;
+      }
+      .row8 {
+        top: $column8_large;
+      }
+      .row7 {
+        top: $column7_large;
+      }
+      .row6 {
+        top: $column6_large;
+      }
+      .row5 {
+        top: $column5_large;
+      }
+      .row4 {
+        top: $column4_large;
+      }
+      .row3 {
+        top: $column3_large;
+      }
+      .row2 {
+        top: $column2_large;
+      }
+    }
+  }
+}
